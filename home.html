@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Talentica test</title>
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/swiper.min.css">
+      <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700;800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body class="home">
+      <!-- START: BODY -->
+      <!-- Start: Home -->
+      <!-- Start: Fixed navbar -->
+      <nav class="navbar  navbar-fixed-top custom-nav">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="images/g-logo.svg"></a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav nav-left">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Your Info</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Experience</a></li>
+              
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hello Sean <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">My Profile</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li><a href="#">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End: Fixed navbar -->
+      <!-- Start: Form section -->
+      <div class="container">
+        <h1 class="heading">
+          Basic Information
+        </h1>
+        <div class="main-wrapper fadeInDown ">
+          <form class="details-form"  method="post" action="abc.jsp" id="detailsForm" onsubmit="return validateForm()" name="myForm">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Personal Details</h2>
+            <div class="gray-bg">
+              
+                <div class="row">
+                  <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="fname" class="inp-label">First Name <span>*</span></label>
+                    <div id="fname">
+                    <input type="text" class="form-control"  placeholder="Enter your first name" name="fname">
+                    <span class="formerror"></span>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="lname" class="inp-label">Last Name <span>*</span></label>
+                      <div id="lname">
+                      <input type="text" class="form-control"  name="lname" placeholder="Enter your last name">
+                      <span class="formerror"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="fname" class="inp-label">Date of Birth <span>*</span></label>
+                    <div id="birthday">
+                    <input type="date"  name="birthday" class="date-inp" placeholder="Enter your date of birth">
+                    <span class="formerror"></span>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="lname" class="inp-label">Gender <span>*</span></label>
+                      <div id="gender">
+                      
+                      <input type="radio" name="gender"  value="male"> Male
+                      <input type="radio" name="gender" value="female"> Female
+                      <span class="formerror"></span>
+                    </div>
+                     
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="email" class="inp-label">Email <span>*</span></label>
+                    <div id="email">
+                    <input type="email" class="form-control"  name="email" placeholder="Enter your email ID">
+                    <span class="formerror"></span>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="phone" class="inp-label">Phone Number <span>*</span></label>
+                      <div id="phone">
+                      <input type="text" class="form-control"  name="phone" placeholder="00000000000">
+                      <span class="formerror"></span>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="address" class="inp-label">Address Line 1 <span>*</span></label>
+                    <div id="address">
+                    <input type="text" class="form-control" name="address"  placeholder="Flat number, building name, area">
+                    <span class="formerror"></span>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="city" class="inp-label">City <span>*</span></label>
+                    <div id="city">
+                    <input type="text" class="form-control" name="city"  placeholder="Enter your City name">
+                    <span class="formerror"></span>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="state" class="inp-label">State <span>*</span></label>
+                    <div id="state">
+                    <select class="select-state" name="state">
+                      <option value="">Please Select</option>
+                      <option value="Indore">Indore</option>
+                      <option value="Pune">Pune</option>
+                    </select>
+                    <span class="formerror"></span>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="zcode" class="inp-label">ZIP Code<span>*</span></label>
+                      <div id="zcode">
+                      <input type="text" class="form-control" name="zcode"  placeholder="000000">
+                      <span class="formerror"></span>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+
+              
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h2>Work Experience</h2>
+            <a href="#" class="delete" id="deleteBtn" ><img src="images/delete.svg"></a>
+            <div class="gray-bg company-details">
+              
+              <div class="row">
+                <div class="col-md-12">
+                <div class="form-group">
+                  <label for="cname" class="inp-label">Company Name <span>*</span></label>
+                  <div id="cname">
+                  <input type="text" class="form-control"  name="cname" placeholder="Enter your Company name">
+                  <span class="formerror"></span>
+                </div>
+                </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                <div class="form-group">
+                  <label for="role" class="inp-label">Role <span>*</span></label>
+                  <div id="role">
+                  <input type="text" class="form-control"  name="role" placeholder="Enter your role in your company">
+                  <span class="formerror"></span>
+                </div>
+                </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="exp" class="inp-label">Experience in months </label>
+                    <div id="exp">
+                    <input type="text" class="form-control"  name="exp" placeholder="000">
+                    <span class="formerror"></span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gray-bg company-details">
+              <div class="row">
+                <div class="col-md-12">
+                <div class="form-group">
+                  <label for="cname" class="inp-label">Company Name <span>*</span></label>
+                  <div id="cname">
+                  <input type="text" class="form-control"  placeholder="Enter your Company name">
+                  <span class="formerror"></span>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                <div class="form-group">
+                  <label for="role" class="inp-label">Role <span>*</span></label>
+                  <div id="role">
+                  <input type="text" class="form-control"  placeholder="Enter your role in your company">
+                  <span class="formerror"></span>
+                </div>
+                </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="exp" class="inp-label">Experience in months </label>
+                    <div id="phone">
+                    <input type="text" class="form-control"  placeholder="000">
+                    <span class="formerror"></span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" id="addAnother">+ Add Another</a>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+      <!-- End Form section -->
+      <!-- Start: Footer -->
+      <footer class="footer">
+        <div class="container">
+          <button class="btn btn-blue pull-right" type="submit" id="next">Next</button>
+        </div>
+      </footer>
+    </form>
+      <!-- End: Footer -->
+      <!-- End: Home-->
+      <!-- END: BODY -->
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="js/swiper.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>
